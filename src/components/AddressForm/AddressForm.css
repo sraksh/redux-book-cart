@@ -1,0 +1,20 @@
+.address-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+}
+.address-button-group {
+  margin-top: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+}

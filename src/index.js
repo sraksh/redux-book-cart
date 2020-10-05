@@ -2,16 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ProductDetails from './components/ProductDetails/ProductDetails';
+import Cart from './components/Cart/Cart';
+import store from './store';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import MyOrders from './components/MyOrders/MyOrders';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const wrapper = (
+  <Provider store={store}>
+    <Router>
+    <Navbar />
+      <Route exact path="/" component={App} />
+      <Route path="/details/:ID" component={ProductDetails} />
+      <Route exact path="/myorder" component={MyOrders} />
+      <Route exact path="/cart" component={Cart} />
+    </Router>
+  </Provider>
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(wrapper, document.getElementById('root'));

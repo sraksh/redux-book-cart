@@ -1,0 +1,63 @@
+@media screen and (max-width: 720px) {
+  .container-fluid {
+    position: static;
+    width: 100%;
+  }
+  a {
+    display: block;
+    width: 100%;
+  }
+  .container-fluid .navbar-right {
+    float: left;
+    width: 100%;
+    padding-left: 0;
+}
+ }
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar {
+  width: 85%;
+  margin: 0 auto;
+}
+input[type=checkbox]{
+  display: none;
+}
+.container-fluid {
+    overflow: hidden;
+    background-color: #f2ebed;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.active {
+    background-color: grey;
+    color: white;
+}
+.navbar-left {
+    float: left;
+    padding: 20px;
+}
+.navbar-right {
+    float: right;
+    padding: 20px;
+}
+.navbar-items {
+    padding: 7px;
+    border-right: 1px solid black;
+}
+.badge-cart-count {
+  border: 1px solid grey;
+  border-radius: 14px;
+  padding: 5px 8px;
+  margin-left: 10px;
+}
+.dynamic-title {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid black;
+}

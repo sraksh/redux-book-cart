@@ -1,0 +1,38 @@
+.card-img-top {
+  width: 140px;
+  height: 140px;
+}
+
+.card {
+  margin: 20px;
+  width: 250px;
+  height: auto;
+  padding-top: 100px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-text-bold {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+.card-title, .card-text-des, .card-text-price {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.card-button {
+  margin: 10px;
+  margin-right: 20px;
+  background-color: #e58087;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+}

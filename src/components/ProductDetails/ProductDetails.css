@@ -1,0 +1,35 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+.p-s {
+    padding: 10px;
+}
+.p-m {
+    padding: 16px;
+}
+.p-l {
+    padding: 20px;
+}
+.product-details-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 82%;
+    margin: 20px auto 0 auto;
+}
+.product-details-image {
+    margin-right: 20px;
+}
+.product-details-description {
+    margin: 20px 0px;
+}
+.product-details-description-text {
+    width: 50%;
+}
+.button {
+  margin-right: 20px;
+  background-color: #e58087;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+}
