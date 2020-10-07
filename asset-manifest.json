@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/redux-book-cart/static/css/main.0bb5df01.chunk.css",
+    "main.js": "/redux-book-cart/static/js/main.d3712ab5.chunk.js",
+    "main.js.map": "/redux-book-cart/static/js/main.d3712ab5.chunk.js.map",
+    "runtime-main.js": "/redux-book-cart/static/js/runtime-main.d8a1a6d9.js",
+    "runtime-main.js.map": "/redux-book-cart/static/js/runtime-main.d8a1a6d9.js.map",
+    "static/js/2.8c7729fe.chunk.js": "/redux-book-cart/static/js/2.8c7729fe.chunk.js",
+    "static/js/2.8c7729fe.chunk.js.map": "/redux-book-cart/static/js/2.8c7729fe.chunk.js.map",
+    "index.html": "/redux-book-cart/index.html",
+    "precache-manifest.f3393b4c9331d76759b409963d26f756.js": "/redux-book-cart/precache-manifest.f3393b4c9331d76759b409963d26f756.js",
+    "service-worker.js": "/redux-book-cart/service-worker.js",
+    "static/css/main.0bb5df01.chunk.css.map": "/redux-book-cart/static/css/main.0bb5df01.chunk.css.map",
+    "static/js/2.8c7729fe.chunk.js.LICENSE.txt": "/redux-book-cart/static/js/2.8c7729fe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8a1a6d9.js",
+    "static/js/2.8c7729fe.chunk.js",
+    "static/css/main.0bb5df01.chunk.css",
+    "static/js/main.d3712ab5.chunk.js"
+  ]
+}
