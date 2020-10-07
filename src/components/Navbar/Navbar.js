@@ -1,4 +1,4 @@
-import React, { useLocation } from 'react'
+import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
 import PropTypes from 'prop-types'
