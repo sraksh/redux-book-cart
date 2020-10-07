@@ -42,6 +42,9 @@ input[type=checkbox]{
     float: left;
     padding: 20px;
 }
+.navbar-left:hover{
+  background: lightgray;
+}
 .navbar-right {
     float: right;
     padding: 20px;

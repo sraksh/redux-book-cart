@@ -13,7 +13,7 @@ import MyOrders from './components/MyOrders/MyOrders';
 const wrapper = (
   <Provider store={store}>
     <Router>
-    <Navbar />
+    <Route component={Navbar} />
       <Route exact path="/" component={App} />
       <Route path="/details/:ID" component={ProductDetails} />
       <Route exact path="/myorder" component={MyOrders} />

@@ -1,7 +1,6 @@
 .list-group {
     width: 81%;
-    margin: 20px auto 20px auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 .order-list-item {
     display: flex;

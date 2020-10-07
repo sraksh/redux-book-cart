@@ -6,7 +6,7 @@
     margin-bottom: 20px;
     justify-content: space-around;
   }
-.list-group {
+.list-group-cart {
     list-style: none;
     padding-left: 20px;
 }
@@ -19,7 +19,15 @@
   justify-content: space-between;
   margin: 20px 0;
 }
-.cart-tax-group, .cart-total-group {
+.cart-tax-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+.cart-total-group {
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;

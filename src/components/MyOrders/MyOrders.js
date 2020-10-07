@@ -1,51 +1,47 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from '../../actions'
 import './MyOrders.css'
 
-class MyOrders extends React.Component {
-  componentDidMount () {
-    this.props.actions.getProducts()
-  }
+const MyOrders = props => {
+  useEffect(() => {
+    props.actions.getProducts()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  var items = props.productItems.map(item => {
+    return (
+      <div key={item.ID} className='list-group-item'>
+        <div className='order-item-date'>Order Date: {item.PublishDate}</div>
 
-  render () {
-    var items = this.props.productItems.map(item => {
-      return (
-        <div className='list-group-item'>
-          <div className='order-item-date'>
-            Order Date: {item.PublishDate}
+        <div className='order-list-item'>
+          <div className='order-item-image'>
+            <img
+              src='https://dummyimage.com/120x120/000/fff'
+              alt='Girl in a jacket'
+            />
           </div>
-
-          <div key={item.ID} className='order-list-item'>
-            <div className='order-item-image'>
-              <img
-                src='https://dummyimage.com/120x120/000/fff'
-                alt='Girl in a jacket'
-              />
+          <div className='order-details-group'>
+            <div className='order-item order-item-title'>
+              Book Title: {item.Title}
             </div>
-            <div className='order-details-group'>
-              <div className='order-item order-item-title'>
-                Book Title: {item.Title}
-              </div>
-              <div className='order-item order-item-Author'>
-                Author Name: Sumit
-              </div>
-              <div className='order-item order-item-price'>
-                Book Price: ${item.PageCount}
-              </div>
+            <div className='order-item order-item-Author'>
+              Author Name: Sumit
+            </div>
+            <div className='order-item order-item-price'>
+              Book Price: ${item.PageCount}
             </div>
           </div>
         </div>
-      )
-    })
-    return (
-      <div>
-        <div className='list-group'>{items}</div>
       </div>
     )
-  }
+  })
+  return (
+    <React.Fragment>
+      <div className='list-group'>{items}</div>
+    </React.Fragment>
+  )
 }
 
 const mapDispatchToProps = dispatch => ({

@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 import AddressForm from '../AddressForm/AddressForm'
 
 class Cart extends Component {
-  UNSAFE_componentWillMount () {}
 
   render () {
     var total = this.props.cartItems.reduce((a, b) => {
@@ -23,7 +22,7 @@ class Cart extends Component {
 
     var emptyBlock = <div className='alert alert-info'>Cart is empty</div>
 
-    var itemsList = <ul className='list-group list-group-flush'>{items}</ul>
+    var itemsList = <ul className='list-group-cart list-group-flush'>{items}</ul>
 
     return (
       <div className='cart-summary-container'>
@@ -39,6 +38,10 @@ class Cart extends Component {
               <div className='cart-tax-group'>
                 <div className='cart__total__text'>Tax:</div>
                 <div className='cart__total__text'>0</div>
+              </div>
+              <div className='cart-tax-group'>
+                <div className='cart-total-text'>Shipping Charge:</div>
+                <div className='cart-total-amount'>0</div>
               </div>
               <div className='cart-total-group'>
                 <div className='cart-total-text'>Total:</div>
